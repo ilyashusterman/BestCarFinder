@@ -8,7 +8,7 @@ export SHELL=/bin/bash
 ## Define repositories dependencies paths
 
 ## Make sure of current python path
-#export PYTHONPATH=backend:$(pwd):$(CYBERCOMB_PATH):$(GRADER_PATH):~/dev
+export PYTHONPATH=$(pwd)
 
 self := $(abspath $(lastword $(MAKEFILE_LIST)))
 parent := $(dir $(self))
